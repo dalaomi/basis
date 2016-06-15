@@ -16,7 +16,7 @@
                         
     <context:component-scan base-package="com.basis.*" />
     <!--配置作业注册中心 -->
-    <reg:zookeeper id="regCenter" serverLists="10.100.142.110:2181" namespace="dd-job" baseSleepTimeMilliseconds="1000" maxSleepTimeMilliseconds="3000" maxRetries="3" />
+    <reg:zookeeper id="regCenter" serverLists="127.0.0.1:2181" namespace="dd-job" baseSleepTimeMilliseconds="1000" maxSleepTimeMilliseconds="3000" maxRetries="3" />
 
      <!-- 配置作业-->
     <job:bean id="oneOffElasticJob" class="com.basis.example.MyElasticJob" regCenter="regCenter" cron="0/10 * * * * ?" shardingTotalCount="3" shardingItemParameters="0=A,1=B,2=C" />
