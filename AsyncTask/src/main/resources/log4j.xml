@@ -32,12 +32,12 @@
         </layout>
     </appender>
 	
-	<logger name="com.creditease.async.job.ThreadPoolStateJob" additivity="false" >
+	<logger name="com.mdy.async.job.ThreadPoolStateJob" additivity="false" >
        <level value="info"></level>
        <appender-ref ref="threadpoolstate"/>
     </logger>
 	
-	<logger name="com.creditease.async.job.ThreadStateJob" additivity="false" >
+	<logger name="com.mdy.async.job.ThreadStateJob" additivity="false" >
        <level value="info"></level>
        <appender-ref ref="threadstate"/>
     </logger>

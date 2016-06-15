@@ -26,7 +26,7 @@ public class ThreadPoolExample2 {
     	for(int i = 0;i<1;i++){
     		AsyncJob asyncJob = new AsyncJob();
     		asyncJob.setId(i+"");
-    		asyncJob.setJobClass("com.creditease.async.sample.DemoJobExecutor");
+    		asyncJob.setJobClass("com.mdy.async.sample.DemoJobExecutor");
     		asyncJob.setJobParams("{param:param1}");
     		asyncJob.setCreateTime(new Date());
     		asyncJob.setUpdateTime(new Date());

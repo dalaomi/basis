@@ -1,4 +1,4 @@
-package com.creditease.basis.cache;
+package com.mdy.basis.cache;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
