@@ -1,0 +1,11 @@
+一、ThroughputDataFlow类型作业
+1、支持取出的数据分批次多线程处理
+2、如果线程数多于待处理数据条数，单线程处理
+3、假定处理线程数为3:如果一次取出100条数据，则每个线程处理数据条数｛34，33，33｝
+4、支持流式处理，通过isStreamingProcess方法配置
+二、SequenceDataFlow类型作业
+1、根据当前分片获取数据，通过fetchData和processData可看出（JobExecutionSingleShardingContext）
+2、处理数据时也按照分片分线程处理，不需要设置线程数；有几个分片，有几个处理线程
+
+三、ThroughputDataFlow批处理类型作业和SequenceDataFlow批处理类型作业
+1、与单处理仅有差别在于processData里面自行处理数据列表

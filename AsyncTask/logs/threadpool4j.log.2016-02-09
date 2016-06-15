@@ -1,0 +1,44 @@
+2016-02-09 17:46:50,529 INFO  initialization thread pool default success
+2016-02-09 17:46:50,530 INFO  initialization thread pool other success
+2016-02-09 17:46:50,531 INFO  start  job 'threadpool4j-threadpoolstate' success
+2016-02-09 17:46:50,532 INFO  start job 'threadpool4j-threadstate' success
+2016-02-09 17:49:32,062 INFO  initialization thread pool default success
+2016-02-09 17:49:32,063 INFO  initialization thread pool other success
+2016-02-09 17:49:32,064 INFO  start  job 'threadpool4j-threadpoolstate' success
+2016-02-09 17:49:32,064 INFO  start job 'threadpool4j-threadstate' success
+2016-02-09 17:51:04,288 INFO  initialization thread pool default success
+2016-02-09 17:51:04,289 INFO  initialization thread pool other success
+2016-02-09 17:51:04,290 INFO  start  job 'threadpool4j-threadpoolstate' success
+2016-02-09 17:51:04,291 INFO  start job 'threadpool4j-threadstate' success
+2016-02-09 17:51:57,867 INFO  initialization thread pool default success
+2016-02-09 17:51:57,868 INFO  initialization thread pool other success
+2016-02-09 17:51:57,869 INFO  start  job 'threadpool4j-threadpoolstate' success
+2016-02-09 17:51:57,870 INFO  start job 'threadpool4j-threadstate' success
+2016-02-09 17:54:46,210 INFO  initialization thread pool default success
+2016-02-09 17:54:46,211 INFO  initialization thread pool other success
+2016-02-09 17:54:46,213 INFO  start  job 'threadpool4j-threadpoolstate' success
+2016-02-09 17:54:46,216 INFO  start job 'threadpool4j-threadstate' success
+2016-02-09 17:56:55,902 INFO  initialization thread pool default success
+2016-02-09 17:56:55,902 INFO  initialization thread pool other success
+2016-02-09 18:00:44,989 INFO  initialization thread pool default success
+2016-02-09 18:00:44,990 INFO  initialization thread pool other success
+2016-02-09 18:01:12,216 INFO  initialization thread pool default success
+2016-02-09 18:01:12,217 INFO  initialization thread pool other success
+2016-02-09 18:02:20,861 INFO  initialization thread pool default success
+2016-02-09 18:02:20,862 INFO  initialization thread pool other success
+2016-02-09 18:02:26,593 INFO  async_job | 0 | 开始任务 ｜ params={param=param1}
+2016-02-09 18:02:41,625 INFO  async_job | 0 | 结束任务 ｜ params={param=param1},taskResult=null
+2016-02-09 18:03:03,562 INFO  initialization thread pool default success
+2016-02-09 18:03:03,563 INFO  initialization thread pool other success
+2016-02-09 18:03:03,662 INFO  async_job | 0 | 开始任务 ｜ params={param=param1}
+2016-02-09 18:03:04,668 INFO  async_job | 0 | 结束任务 ｜ params={param=param1},taskResult=null
+2016-02-09 18:07:17,817 INFO  initialization thread pool default success
+2016-02-09 18:07:17,820 INFO  initialization thread pool other success
+2016-02-09 18:08:40,973 INFO  initialization thread pool default success
+2016-02-09 18:08:40,975 INFO  initialization thread pool other success
+2016-02-09 18:09:12,582 INFO  initialization thread pool default success
+2016-02-09 18:09:12,583 INFO  initialization thread pool other success
+2016-02-09 18:09:39,183 INFO  initialization thread pool default success
+2016-02-09 18:09:39,184 INFO  initialization thread pool other success
+2016-02-09 18:16:15,803 INFO  initialization thread pool default success
+2016-02-09 18:16:15,804 INFO  initialization thread pool other success
