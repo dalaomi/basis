@@ -34,5 +34,6 @@
 		<module>AsyncTask</module>
 		<module>basis-elastic-job-example</module>
     <module>basis-cache</module>
-  </modules>
+    <module>basis-utils</module>
+	</modules>
 </project>
