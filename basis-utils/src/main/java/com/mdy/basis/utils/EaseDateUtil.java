@@ -223,6 +223,9 @@ public class EaseDateUtil {
 	 * @return 格式化后的字符串
 	 */
 	public static String format(Date date, String format) {
+		if(date==null || StrUtil.isBlank(format)){
+			return null;
+		}
 		return new SimpleDateFormat(format).format(date);
 	}
 
@@ -233,6 +236,8 @@ public class EaseDateUtil {
 	 * @return 格式化后的日期
 	 */
 	public static String formatDateTime(Date date) {
+		if(date==null)
+			return null;
 		return NORM_DATETIME_FORMAT.get().format(date);
 	}
 
@@ -243,6 +248,8 @@ public class EaseDateUtil {
 	 * @return 格式化后的字符串
 	 */
 	public static String formatDate(Date date) {
+		if(date==null)
+			return null;
 		return NORM_DATE_FORMAT.get().format(date);
 	}
 
@@ -253,6 +260,8 @@ public class EaseDateUtil {
 	 * @return HTTP标准形式日期字符串
 	 */
 	public static String formatHttpDate(Date date) {
+		if(date==null)
+			return null;
 		return HTTP_DATETIME_FORMAT.get().format(date);
 	}
 	// ------------------------------------ Format end ----------------------------------------------
@@ -471,9 +480,6 @@ public class EaseDateUtil {
 	
 	// ------------------------------------ compare begin ----------------------------------------------
 	/**
-	 * 判端date1是否在date2之前；当date1的时间早于date2是返回true date1，date2的格式为：2009-08-01
-	 */
-	/**
 	 * 判端firstDate是否在secondDate之前
 	 * 
 	 * @param firstDate 
@@ -489,6 +495,25 @@ public class EaseDateUtil {
 			return false;
 		}
 	}
+	
+	/**  
+     * 计算两个日期之间相差的天数  
+     * @param smdate 较小的时间 
+     * @param bdate  较大的时间 
+     * @return 相差天数 
+     * @throws ParseException  
+     */    
+    public static int daysBetween(Date smdate,Date bdate){    
+        smdate=parse(formatDate(smdate));  
+        bdate=parse(formatDate(bdate));  
+        Calendar cal = Calendar.getInstance();    
+        cal.setTime(smdate);    
+        long time1 = cal.getTimeInMillis();                 
+        cal.setTime(bdate);    
+        long time2 = cal.getTimeInMillis();         
+        long between_days=(time2-time1)/(1000*3600*24);  
+       return Integer.parseInt(String.valueOf(between_days));           
+    } 
 	
 	// ------------------------------------ compare end ----------------------------------------------
 	
