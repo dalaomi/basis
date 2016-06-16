@@ -15,7 +15,7 @@ import com.mdy.basis.utils.exception.UtilException;
  * 
  * @author auto
  */
-public class DateUtil {
+public class EaseDateUtil {
 	/** 毫秒 */
 	public final static long MS = 1;
 	/** 每秒钟的毫秒数 */
@@ -535,7 +535,7 @@ public class DateUtil {
 	 * @return int
 	 */
 	public static int toIntSecond(Date date) {
-		return Integer.parseInt(DateUtil.format(date, "yyMMddHHmm"));
+		return Integer.parseInt(EaseDateUtil.format(date, "yyMMddHHmm"));
 	}
 
 	/**
