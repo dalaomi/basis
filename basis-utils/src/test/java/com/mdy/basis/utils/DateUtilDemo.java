@@ -1,5 +1,6 @@
 package com.mdy.basis.utils;
 
+import java.util.Calendar;
 import java.util.Date;
 
 import org.junit.Assert;
@@ -45,6 +46,18 @@ public class DateUtilDemo extends TestCase{
 		System.out.println(EaseDateUtil.daysBetween(startDate, endDate));
 		Assert.assertEquals(OldDateUtil.daysBetween(startDate, endDate), EaseDateUtil.daysBetween(startDate, endDate));
 		
+	}
+	public void testAdd() throws Exception{
+		Date startDate = EaseDateUtil.parse("2016-01-01 12:23:34");
+		Date oldAddDate = OldDateUtil.addDay(startDate, 1);
+		Date newAddDate = EaseDateUtil.offsiteDay(startDate, 1);
+		System.out.println(oldAddDate);
+		System.out.println(newAddDate);
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(startDate);
+		System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
+		System.out.println(calendar.get(Calendar.DAY_OF_YEAR));
+		System.out.println(calendar.get(Calendar.DATE));
 	}
 
 }
